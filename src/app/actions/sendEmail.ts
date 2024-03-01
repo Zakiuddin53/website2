@@ -14,7 +14,6 @@ export const sendEmail = async (formData: FormData) => {
 
 
 
-  // simple server-side validation
   if (!validateString(senderEmail, 500)) {
     return {
       error: "Invalid sender email",
